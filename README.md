@@ -59,4 +59,4 @@ Listen address/port come from `[server]`; override with `-a/--ip-address` and
 
 ## License
 
-[MIT](LICENSE) © 2026 Kazunari Kaizu
+[MIT](LICENSE) © 2026 RIKEN

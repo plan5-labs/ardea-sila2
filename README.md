@@ -4,10 +4,10 @@ A **SiLA 2 server** for the **Ardea** device. Ardea is driven through two
 providers at once, and this server exposes both:
 
 - **DENSO robot controller** over ORiN b-CAP — reuses
-  [bcap-sila2](https://github.com/kaizu/bcap-sila2): `VariableService`,
+  [bcap-sila2](https://github.com/plan5-labs/bcap-sila2): `VariableService`,
   `TaskService`
 - **KEYENCE PLC** over the KV COM+ Library — reuses
-  [kvcomplus-sila2](https://github.com/kaizu/kvcomplus-sila2): `DeviceService`,
+  [kvcomplus-sila2](https://github.com/plan5-labs/kvcomplus-sila2): `DeviceService`,
   `ConnectionService`
 
 Both provider packages are vendored as **git submodules** under `third_party/`
@@ -31,7 +31,7 @@ The provider packages (and b-CAP's own `orin_bcap` submodule) are nested
 submodules, so clone recursively:
 
 ```bash
-git clone --recurse-submodules git@github.com:kaizu/ardea-sila2.git
+git clone --recurse-submodules https://github.com/plan5-labs/ardea-sila2.git
 cd ardea-sila2
 uv sync
 ```
